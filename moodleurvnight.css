@@ -1,10 +1,13 @@
 /* ==UserStyle==
-@name			Moodle URV Dark
-@author			IsmaelHG
-@version		1.0.0
+@name		Moodle URV Dark
+@namespace	https://github.com/IsmaelHG/
+@author		IsmaelHG
+@homepageURL    https://github.com/IsmaelHG/MoodleURVNightCSS
+@supportURL     https://github.com/IsmaelHG/MoodleURVNightCSS/issues
+@updateURL      https://raw.githubusercontent.com/IsmaelHG/MoodleURVNightCSS/main/moodleurvnight.css
+@version	1.0.0
 @preprocessor	default
 ==/UserStyle== */
-
 @-moz-document domain("campusvirtual.urv.cat") {
 
 	
