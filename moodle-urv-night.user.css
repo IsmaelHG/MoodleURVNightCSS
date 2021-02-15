@@ -5,7 +5,7 @@
 @homepageURL    https://github.com/IsmaelHG/MoodleURVNightCSS
 @supportURL     https://github.com/IsmaelHG/MoodleURVNightCSS/issues
 @updateURL      https://raw.githubusercontent.com/IsmaelHG/MoodleURVNightCSS/main/moodle-urv-night.user.css
-@version	1.0.1
+@version	1.0.2
 @preprocessor	default
 ==/UserStyle== */
 @-moz-document domain("campusvirtual.urv.cat") {
@@ -190,6 +190,25 @@
 
     .bg-dark {
         background-color: var(--bg-color) !important
+    }
+
+    .form-autocomplete-suggestions {
+        background-color: var(--bg-color) !important
+    }
+
+    .form-autocomplete-suggestions li:hover {
+        background-color: var(--hover-color) !important
+    }
+
+    .message-app .message.send {
+        background-color: var(--bg-3-color) !important;
+        color: #212529 !important;
+    }
+
+    .message-app .message.send .tail {
+        right: 0;
+        margin-right: -.5rem;
+        border-bottom-color: var(--bg-3-color) !important;
     }
 
     /* side navigation tabs */
