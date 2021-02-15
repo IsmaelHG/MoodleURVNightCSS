@@ -1,0 +1,414 @@
+/* ==UserStyle==
+@name			Moodle URV Dark
+@author			IsmaelHG
+@version		1.0.0
+@preprocessor	default
+==/UserStyle== */
+
+@-moz-document domain("campusvirtual.urv.cat") {
+
+	
+	/* dark theme */
+	:root {
+		--bg-color: #21252b;
+		--bg-2-color: #282C34;
+		--bg-3-color: #333842;
+	    --button-color: #303344;
+	    --textarea-color: #303344;
+		--border-color: #47474b;
+		--hover-color: #434462;
+	    --mini-calendar-alert-color: #6f4a4a;
+		--red-color: #8c4a4a;
+	    --bright-red-color: #f44141;
+	    --green-color: #478a4f;
+	    --yellow-color: #a2a652;
+	    --gray-color: #798497;
+	    --dark-gray-color: #4a5775;
+		--text-color: #D7E2EF;
+	    --link-color: #90292a;
+	    --link-hover-color: #541819;
+	}
+	
+	/* reset */
+	
+	* {
+	    color: var(--text-color) !important;
+	    transition: background .15s ease-in-out, color 0s !important;
+	    text-decoration: none !important;
+	    text-shadow: none !important;
+	    background-color: #0000 !important;
+	}
+
+    #region-main {
+        background: var(--bg-2-color) !important;
+    }
+
+        .table-striped tbody tr:nth-of-type(odd),
+    table.collection tbody tr:nth-of-type(odd),
+    table#explaincaps tbody tr:nth-of-type(odd),
+    table#defineroletable tbody tr:nth-of-type(odd),
+    table.grading-report tbody tr:nth-of-type(odd),
+    table#listdirectories tbody tr:nth-of-type(odd),
+    table.rolecaps tbody tr:nth-of-type(odd),
+    table.userenrolment tbody tr:nth-of-type(odd),
+    form#movecourses table tbody tr:nth-of-type(odd),
+    #page-admin-course-index .editcourse tbody tr:nth-of-type(odd),
+    .forumheaderlist tbody tr:nth-of-type(odd),
+    table.flexible tbody tr:nth-of-type(odd),
+    .generaltable tbody tr:nth-of-type(odd) {
+     background-color: var(--bg-color) !important;
+    }
+	
+	/* background */
+	body {
+	    background: var(--bg-color) !important;
+	}
+	
+	[data-region="drawer"] {
+	    background-color: var(--bg-color) !important;
+	}
+	
+	.list-group-item {
+	    position: relative;
+	    display: block;
+	    padding: .75rem 1.25rem;
+	    margin-bottom: -1px;
+	    background-color: var(--bg-color);
+	    border: 1px solid var(--border-color);
+	}
+	
+	
+	#region-main {
+	    overflow-x: auto;
+	    overflow-y: visible;
+	    border: 1px solid var(--border-color);
+	    border-radius: .25rem;
+	    padding: 1.25rem;
+	    background-color: var(--bg-2-color);
+	}
+	
+	.bg-white {
+	    background-color: var(--bg-2-color) !important;
+	    border: 1px solid var(--border-color);
+	}
+
+    .page-link {
+        color: var(--text-color) !important;
+    }
+	
+	.btn-light {
+	    color: #373a3c;
+	    background-color: #000000;
+	    border-color: var(--bg-color);
+	}
+	
+	.btn-light:hover {
+	    color: var(--bg-color);
+	    background-color: var(--bg-color);
+	    border-color: var(--bg-color);
+	}
+	
+	body {
+	    margin: 0;
+	    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	    font-size: 1rem;
+	    font-weight: 400;
+	    line-height: 1.5;
+	    color: var(--text-color);
+	    text-align: left;
+	    background-color: var(--bg-color);
+	}
+	
+	.tool-card-body {
+	    border-top: 1px solid var(--border-color);
+	    -webkit-box-sizing: border-box;
+	    box-sizing: border-box;
+	    padding: 5px;
+	    height: 125px
+	}
+	
+	.card, #page-enrol-users #filterform, .que .history, .userprofile .profile_tree section, .groupinfobox, .well {
+	    position: relative;
+	    display: flex;
+	    flex-direction: column;
+	    min-width: 0;
+	    word-wrap: break-word;
+	    background-color: var(--bg-2-color);
+	    -webkit-background-clip: border-box;
+	    background-clip: border-box;
+	    border: 1px solid var(--border-color);
+	    border-radius: .25rem
+	}
+	
+	.block_coursecat_overview .coursebox {
+	    margin-bottom: 15px;
+	    border: 1px solid #ddd;
+	    -webkit-border-radius: 4px;
+	    -moz-border-radius: 4px;
+	    border-radius: 4px;
+	    padding: 15px;
+	    background-color: var(--bg-color);
+	}
+	
+	.bg-dark {
+	    background-color:var(--bg-color) !important
+	}
+	
+	/* side navigation tabs */
+	#nav-drawer {
+	    background: var(--bg-color) !important;
+	}
+	
+	#nav-drawer .list-group {
+	    background: var(--bg-2-color) !important;
+	    border: 1px solid var(--border-color) !important;
+	    border-radius: 5px !important;
+	}
+	
+	#nav-drawer .list-group:last-child {
+	    margin-bottom: 10% !important;
+	}
+	
+	#nav-drawer .list-group-item {
+	    background: none !important;
+	    border-right: none !important;
+	    border-left: none !important;
+	    border-color: var(--border-color) !important;
+	}
+	
+	#nav-drawer .list-group-item:hover {
+	    background: var(--hover-color) !important;
+	}
+	
+	#nav-drawer .list-group-item:first-child {
+	    border-top: none !important;
+	}
+	
+	/* footer */
+	#page-footer.bg-inverse, body.whitetheme #page-footer.bg-inverse {
+	    background: var(--bg-color) !important;
+	}
+	
+	a {
+	    color: var(--link-color) !important;
+	}
+	
+	a:hover {
+	    color: var(--link-hover-color) !important;
+	}
+	
+	.card a {
+	    color: var(--link-color) !important;
+	}
+	
+	.card a:hover {
+	    color: var(--link-hover-color) !important;
+	}
+
+    .instancename {
+        color: var(--link-color) !important;
+    }
+	
+	.img-fluid {
+	  background-image: url(https://campusvirtual.urv.cat/pluginfile.php/1/core_admin/logo/0x150/1613295477/logoURVppd.png);
+	}
+	
+	.badge-info {
+	    color: #212529 !important ;
+	    background-color:#5bc0de !important;
+	}
+
+    .count-container {
+        background-color:#ff0000 !important;
+    }
+
+    .unread {
+        background-color:var(--bg-color) !important;
+    }
+
+
+
+	/* popovers */
+	.popover {
+	    background: var(--bg-3-color) !important;
+	    border: 1px solid var(--border-color);
+	    border-radius: 5px !important;
+	    box-shadow: 0 5px 10px rgba(0, 0, 0, .25) !important;
+	}
+	
+	.popover .popover-title {
+	    border-color: var(--border-color) !important;
+	}
+	
+	
+	/* hover tooltips */
+	.hover-tooltip {
+	    background: var(--bg-3-color) !important;
+	    border: 1px solid var(--border-color) !important;
+	    border-radius: 5px !important;
+	    box-shadow: 0 5px 10px rgba(0, 0, 0, .25) !important;
+	}
+	
+	
+	/* textareas */
+	textarea {
+	    background: var(--textarea-color) !important;
+	    border: 1px solid var(--border-color);
+	    box-shadow: none !important;
+	    border-radius: 5px !important;
+	}
+	
+	
+	/* header */
+	.navbar-light {
+	    background: var(--bg-color) !important;
+	    border-color: var(--border-color) !important;
+	}
+	
+	    /* hide/show side tabs button */
+	    .navbar .btn {
+	        background: var(--button-color) !important;
+	        border-color: var(--border-color) !important;
+	        border-radius: 5px !important;
+	    }
+	
+	    .navbar .btn:hover {
+	        background: var(--hover-color) !important;
+	    }
+	
+	    /* profile dropdown */
+	    .navbar .dropdown .dropdown-menu {
+	        background: var(--bg-3-color) !important;
+	        border-color: var(--border-color) !important;
+	        border-radius: 5px !important;
+	        box-shadow: 0 5px 10px rgba(0, 0, 0, .25) !important;
+	    }
+	
+	    .navbar .dropdown .dropdown-menu .dropdown-item {
+	        border-color: var(--border-color) !important;
+	    }
+	
+	    .navbar .dropdown .dropdown-menu .dropdown-item:hover {
+	        background: var(--hover-color) !important;
+	    }
+	
+	    .navbar .dropdown .dropdown-menu .dropdown-item:focus {
+	        background: none;
+	    }
+	
+	    /* messages and notification dropdowns */
+	    .navbar .popover-region-container {
+	        background: var(--bg-3-color) !important;
+	        border-color: var(--border-color) !important;
+	        border-radius: 5px !important;
+	        box-shadow: 0 5px 10px rgba(0, 0, 0, .25) !important;
+	    }
+	
+	    .navbar .popover-region-header-container {
+	        border-color: var(--border-color) !important;
+	    }
+	
+	    .navbar .popover-region-footer-container {
+	        background: var(--bg-3-color) !important;
+	        border-color: var(--border-color) !important;
+	        border-radius: 5px !important;
+	    }
+	
+	    .navbar .popover-region-footer-container:hover {
+	        background: var(--hover-color) !important;
+	    }
+	
+	    .navbar .content-item-container {
+	        border-color: var(--border-color) !important;
+	    }
+	
+	    .navbar .content-item-container:hover {
+	        background: var(--hover-color) !important;
+	    }
+
+	
+	/* course cards */
+	.card {
+	    background: var(--bg-2-color) !important;
+	    border-color: var(--border-color) !important;
+	    border-radius: 5px !important;
+	}
+	
+	.card-block {
+	    border-radius: 5px !important;
+	}
+	
+	
+	    /* event view */
+	    #page-calendar-view .card-header {
+	        border-color: var(--border-color) !important;
+	    }
+	
+	    /* monthly view side card */
+	    .minicalendar tr a {
+	        background: var(--mini-calendar-alert-color) !important;
+	    }
+
+	/* upcoming events blcok */
+	.card-block .event hr {
+	    border-color: var(--border-color) !important;
+	}
+	
+	
+	/* scrollbar */
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+	::-webkit-scrollbar-track {
+		background: #787878;
+		border-radius: 10px;
+		margin: 20px;
+	}
+	::-webkit-scrollbar-thumb {
+		background: #434343;
+		border-radius: 10px;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
+
+	
+	/* select */
+	select {
+	    background: var(--button-color) !important;
+	    border: 1px solid var(--border-color) !important;
+	    border-radius: 5px !important;
+	}
+	
+	select option{
+	    background: var(--button-color) !important;
+	}
+	
+	select:hover {
+	    background-color: var(--hover-color) !important;
+	    cursor: pointer !important;
+	}
+
+.custom-select {
+ display:inline-block;
+ width:100%;
+ height:calc(1.5em + .75rem + 2px);
+ padding:.375rem 1.75rem .375rem .75rem;
+ font-size:1rem;
+ font-weight:400;
+ line-height:1.5;
+ color:#495057;
+ vertical-align:middle;
+ background:url("data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 5\'%3e%3cpath fill=\'%23ffffff\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px !important;
+ background-color:#fff;
+ border:1px solid #ced4da;
+ border-radius:.25rem;
+ -webkit-appearance:none;
+ -moz-appearance:none;
+ appearance:none
+}
+
+
+
+	
+}
