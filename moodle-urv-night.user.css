@@ -5,7 +5,7 @@
 @homepageURL    https://github.com/IsmaelHG/MoodleURVNightCSS
 @supportURL     https://github.com/IsmaelHG/MoodleURVNightCSS/issues
 @updateURL      https://raw.githubusercontent.com/IsmaelHG/MoodleURVNightCSS/main/moodle-urv-night.user.css
-@version	1.0.2
+@version	1.0.3
 @preprocessor	default
 ==/UserStyle== */
 @-moz-document domain("campusvirtual.urv.cat") {
@@ -352,6 +352,33 @@
 
     .navbar .dropdown .dropdown-menu .dropdown-item:focus {
         background: none;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 10rem;
+        padding: .5rem 0;
+        margin: .125rem 0 0;
+        font-size: 1rem;
+        color: #373a3c;
+        text-align: left;
+        list-style: none;
+        background-color: var(--bg-3-color) !important;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid var(--border-color) !important;
+        border-radius: .25rem
+    }
+
+    .btn-outline-secondary:hover {
+        color: #212529;
+        background-color: var(--hover-color) !important;
+        border-color: #ced4da
     }
 
     /* messages and notification dropdowns */
