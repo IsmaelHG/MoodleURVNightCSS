@@ -5,7 +5,7 @@
 @homepageURL    https://github.com/IsmaelHG/MoodleURVNightCSS
 @supportURL     https://github.com/IsmaelHG/MoodleURVNightCSS/issues
 @updateURL      https://raw.githubusercontent.com/IsmaelHG/MoodleURVNightCSS/main/moodle-urv-night.user.css
-@version	1.0.3
+@version	1.0.4
 @preprocessor	default
 ==/UserStyle== */
 @-moz-document domain("campusvirtual.urv.cat") {
@@ -99,6 +99,23 @@
 
     [data-region="drawer"] {
         background-color: var(--bg-color) !important;
+    }
+
+    .alert-danger,
+    #page-admin-index .adminerror {
+        color: #712b29 !important;
+        background-color: #f7dddc !important;
+        border-color: #f4cfce !important;
+    }
+
+    button.close,
+    .moodle-dialogue-base button.closebutton {
+        padding: 0;
+        color: #000 !important;
+        border: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none
     }
 
     .list-group-item {
