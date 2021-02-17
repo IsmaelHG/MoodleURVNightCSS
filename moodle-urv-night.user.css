@@ -5,7 +5,7 @@
 @homepageURL    https://github.com/IsmaelHG/MoodleURVNightCSS
 @supportURL     https://github.com/IsmaelHG/MoodleURVNightCSS/issues
 @updateURL      https://raw.githubusercontent.com/IsmaelHG/MoodleURVNightCSS/main/moodle-urv-night.user.css
-@version	1.0.5
+@version	1.0.6
 @preprocessor	default
 ==/UserStyle== */
 @-moz-document domain("campusvirtual.urv.cat") {
@@ -218,15 +218,13 @@
     }
 
     .message-app .message.send,
-    .message-app .message.received
-    {
+    .message-app .message.received {
         background-color: var(--bg-3-color) !important;
         color: #212529 !important;
     }
 
     .message-app .message.send .tail,
-    .message-app .message.received .tail
-    {
+    .message-app .message.received .tail {
         right: 0;
         margin-right: -.5rem;
         border-bottom-color: var(--bg-3-color) !important;
@@ -523,5 +521,63 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none
+    }
+
+    .alert-info,
+    #page-admin-index .releasenoteslink,
+    #adminsettings .form-overridden,
+    .que .formulation,
+    .assignfeedback_editpdf_widget .label {
+        color: #2f6473 !important;
+        background-color: var(--bg-3-color) !important;
+        border-color: #d1edf6 !important;
+    }
+
+
+    .alert-warning,
+    #page-admin-index .adminwarning,
+    .uninstalldeleteconfirmexternal,
+    .que .outcome,
+    .que .outcome .feedback,
+    .que .outcome .feedback *,
+    .que .comment {
+        color: #7d5a29 !important;
+        background-color: #fcefdc !important;
+        border-color: #fbe8cd !important;
+    }
+
+    .path-mod-quiz #mod_quiz_navblock .qnbutton.correct .trafficlight {
+        background-image: url(/theme/image.php/sred/theme/1613542625/mod/quiz/checkmark);
+        background-color: #5cb85c !important;
+    }
+
+    .path-mod-quiz #mod_quiz_navblock .qnbutton.notanswered .trafficlight,
+    .path-mod-quiz #mod_quiz_navblock .qnbutton.incorrect .trafficlight {
+        background-color: #d9534f !important;
+    }
+    
+    .que .info {
+ float:left;
+ width:7em;
+ padding:.5em;
+ margin-bottom:1.8em;
+ background-color:var(--bg-3-color) !important;
+ border:1px solid #cad0d7 !important;
+ border-radius:2px
+}
+
+    .path-mod-quiz #mod_quiz_navblock .qnbutton {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        background-color: #fff !important;
+        background-image: none;
+        height: 40px;
+        width: 30px;
+        border-radius: 3px;
+        border: 0;
+        overflow: visible;
+        margin: 0 6px 6px 0
     }
 }
