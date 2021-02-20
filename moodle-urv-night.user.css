@@ -5,7 +5,7 @@
 @homepageURL    https://github.com/IsmaelHG/MoodleURVNightCSS
 @supportURL     https://github.com/IsmaelHG/MoodleURVNightCSS/issues
 @updateURL      https://raw.githubusercontent.com/IsmaelHG/MoodleURVNightCSS/main/moodle-urv-night.user.css
-@version	1.0.6
+@version	1.0.7
 @preprocessor	default
 ==/UserStyle== */
 @-moz-document domain("campusvirtual.urv.cat") {
@@ -555,16 +555,31 @@
     .path-mod-quiz #mod_quiz_navblock .qnbutton.incorrect .trafficlight {
         background-color: #d9534f !important;
     }
-    
+
+    .path-mod-quiz #mod_quiz_navblock .qnbutton.partiallycorrect .trafficlight {
+        background-image: url(/theme/image.php/sred/theme/1613818791/mod/quiz/whitecircle);
+        background-color: #ff7518 !important;
+    }
+
+    .que.multianswer .feedbackspan {
+        display: block;
+        max-width: 70%;
+        background: var(--hover-color) !important;
+        padding: .5em;
+        margin-top: 1em;
+        -webkit-box-shadow: .5em .5em 1em #000;
+        box-shadow: .5em .5em 1em #000
+    }
+
     .que .info {
- float:left;
- width:7em;
- padding:.5em;
- margin-bottom:1.8em;
- background-color:var(--bg-3-color) !important;
- border:1px solid #cad0d7 !important;
- border-radius:2px
-}
+        float: left;
+        width: 7em;
+        padding: .5em;
+        margin-bottom: 1.8em;
+        background-color: var(--bg-3-color) !important;
+        border: 1px solid #cad0d7 !important;
+        border-radius: 2px
+    }
 
     .path-mod-quiz #mod_quiz_navblock .qnbutton {
         text-decoration: none;
