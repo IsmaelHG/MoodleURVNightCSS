@@ -1,5 +1,6 @@
 # MoodleURVNightCSS
-CSS para aplicar el modo noche al moodle de la URV (Universitat Rovira i Virgili)
+CSS para aplicar el modo noche al moodle de la URV (Universitat Rovira i Virgili). 
+Puede que funcione con otras universidades que utilicen Moodle
 
 ![alt text](URV_moodle_1.jpg)
 
