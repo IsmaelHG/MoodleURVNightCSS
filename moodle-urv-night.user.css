@@ -5,7 +5,7 @@
 @homepageURL    https://github.com/IsmaelHG/MoodleURVNightCSS
 @supportURL     https://github.com/IsmaelHG/MoodleURVNightCSS/issues
 @updateURL      https://raw.githubusercontent.com/IsmaelHG/MoodleURVNightCSS/main/moodle-urv-night.user.css
-@version	1.0.9
+@version	1.1.0
 @preprocessor	default
 ==/UserStyle== */
 @-moz-document domain("campusvirtual.urv.cat") {
@@ -45,10 +45,7 @@
         background: var(--bg-2-color) !important;
     }
 
-    /* Para ocultar la seccion noticias, comenta esta seccion si quieres seguir viendolas*/
-    .block_usernews {
-        display: none !important;
-    }
+ 
     /* */
     .table-striped tbody tr:nth-of-type(odd),
     table.yui3-datatable-table tbody tr:nth-of-type(odd),
