@@ -5,7 +5,7 @@
 @homepageURL    https://github.com/IsmaelHG/MoodleURVNightCSS
 @supportURL     https://github.com/IsmaelHG/MoodleURVNightCSS/issues
 @updateURL      https://raw.githubusercontent.com/IsmaelHG/MoodleURVNightCSS/main/moodle-urv-night.user.css
-@version	1.1.0
+@version	1.1.1
 @preprocessor	default
 ==/UserStyle== */
 @-moz-document domain("campusvirtual.urv.cat") {
@@ -28,8 +28,8 @@
         --gray-color: #798497;
         --dark-gray-color: #4a5775;
         --text-color: #D7E2EF;
-        --link-color: #90292a;
-        --link-hover-color: #541819;
+        --link-color: #46c0e6;
+        --link-hover-color: #1b7f9e;
     }
 
     /* reset */
