@@ -5,7 +5,7 @@
 @homepageURL    https://github.com/IsmaelHG/MoodleURVNightCSS
 @supportURL     https://github.com/IsmaelHG/MoodleURVNightCSS/issues
 @updateURL      https://raw.githubusercontent.com/IsmaelHG/MoodleURVNightCSS/main/moodle-urv-night.user.css
-@version	1.1.1
+@version	1.1.2
 @preprocessor	default
 ==/UserStyle== */
 @-moz-document domain("campusvirtual.urv.cat") {
@@ -603,4 +603,10 @@
         overflow: visible;
         margin: 0 6px 6px 0
     }
+    
+    .gradingform_rubric .criterion .levels .level.checked {
+        background:var(--hover-color) !important;
+        border:1px solid #555
+    }
+    
 }
